@@ -12,7 +12,7 @@ class App extends React.Component {
 
   calculate = () => {
     try {
-      const result = eval(this.state.data);
+      const result = eval(this.state.data); // тестирование eval
       this.setState({ data: result });
     } catch (e) {
       this.setState({ data: 'error' });
